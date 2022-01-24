@@ -20,7 +20,6 @@ export default /** @type {import("astro").AstroUserConfig} */ ({
 			AutoImport({
 				resolvers: [
 					IconsResolver({prefix:"Icon_", extension:"tsx", alias:IconAliases}),
-					IconsResolver({prefix:"Icon_", extension:"md" , alias:IconAliases}),
 				],
 			}),
 

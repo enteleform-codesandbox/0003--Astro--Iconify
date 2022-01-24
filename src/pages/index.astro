@@ -1,5 +1,6 @@
 ---
-import Icons from "../components/Icons"
+import Icons    from "../components/Icons"
+import Icons_MD from "../components/Icons_MD.md"
 ---
 
 <html>
@@ -18,9 +19,20 @@ import Icons from "../components/Icons"
 
 			main{
 				display:         flex;
-				flex-direction:  row;
+				flex-direction:  column;
 				justify-content: space-around;
-				align-items:     center;
+				font-family:     monospace;
+			}
+
+			section{
+				display:        flex;
+				flex-direction: column;
+				align-items:    center;
+			}
+
+			h2{
+				margin-top: 0;
+				font-size:  3rem;
 			}
 		</style>
 
@@ -28,7 +40,18 @@ import Icons from "../components/Icons"
 
 	<body>
 		<main>
-			<Icons/>
+			<section>
+				<h2>TSX</h2>
+				<div class="Icons">
+					<Icons/>
+				</div>
+			</section>
+			<section>
+				<h2>MD</h2>
+				<div class="Icons">
+					<Icons_MD/>
+				</div>
+			</section>
 		</main>
 	</body>
 
