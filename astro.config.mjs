@@ -23,18 +23,9 @@ export default /** @type {import("astro").AstroUserConfig} */ ({
 				],
 			}),
 
-			/** [Config 1] Preferred, currently doesn't work @ .astro */
-			//Icons({
-			//	compiler:     "solid",
-			//	defaultClass: "Icon",
-			//}),
-
-			/** [Config 2] modified for .astro compat */
 			Icons({
-				compiler: "solid",
-				iconCustomizer(collection, icon, props){
-					props["data-iconify"] = true
-				},
+				compiler:     "solid",
+				defaultClass: "Icon",
 			}),
 
 		],

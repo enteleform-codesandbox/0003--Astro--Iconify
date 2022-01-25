@@ -33,8 +33,7 @@ section:first-child > h2{
 	height: 10vmin;
 }
 
-.Icon,          /* [Config 1] */
-[data-iconify]{ /* [Config 2] */
+.Icon{
 	aspect-ratio: 1/1;
 	height:       100%;
 	width:        unset;
