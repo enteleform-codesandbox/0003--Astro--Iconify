@@ -1,6 +1,12 @@
 ---
+import "./index.css"
+
 import Icons    from "../components/Icons"
 import Icons_MD from "../components/Icons_MD.md"
+
+import Icon_Javascript  from "~icons/logos/nodejs-icon"
+import Icon_Star        from "~icons/fa-solid/star"
+import Icon_StarOutline from "~icons/fa-regular/star"
 ---
 
 <html>
@@ -9,49 +15,34 @@ import Icons_MD from "../components/Icons_MD.md"
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width"/>
 		<link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-
-		<style>
-			html, body, main{
-				width:  100%;
-				height: 100%;
-				margin: 0;
-			}
-
-			main{
-				display:         flex;
-				flex-direction:  column;
-				justify-content: space-around;
-				font-family:     monospace;
-			}
-
-			section{
-				display:        flex;
-				flex-direction: column;
-				align-items:    center;
-			}
-
-			h2{
-				margin-top: 0;
-				font-size:  3rem;
-			}
-		</style>
-
 	</head>
 
 	<body>
 		<main>
+
 			<section>
 				<h2>TSX</h2>
 				<div class="Icons">
 					<Icons/>
 				</div>
 			</section>
+
 			<section>
 				<h2>MD</h2>
 				<div class="Icons">
 					<Icons_MD/>
 				</div>
 			</section>
+
+			<section>
+				<h2>Astro</h2>
+				<div class="Icons">
+					<Icon_Star       />
+					<Icon_Javascript />
+					<Icon_StarOutline/>
+				</div>
+			</section>
+
 		</main>
 	</body>
 

@@ -2,7 +2,7 @@
 // We suggest you to commit this file into source control
 declare global {
   const Icon_Awesome_Star: typeof import('~icons/fa-solid/star.tsx')['default']
-  const Icon_AwesomeBrands_Html5: typeof import('~icons/fa-brands/html5.tsx')['default']
   const Icon_AwesomeOutline_Star: typeof import('~icons/fa-regular/star.tsx')['default']
+  const Icon_Logos_Html5: typeof import('~icons/logos/html5.tsx')['default']
 }
 export {}

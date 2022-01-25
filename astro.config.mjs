@@ -5,8 +5,8 @@ import IconsResolver from "unplugin-icons/resolver"
 
 const IconAliases = {
 	"awesome_":         "fa-solid",
-	"awesome-brands_":  "fa-brands",
 	"awesome-outline_": "fa-regular",
+	"logos_":           "logos",
 }
 
 
@@ -19,13 +19,22 @@ export default /** @type {import("astro").AstroUserConfig} */ ({
 
 			AutoImport({
 				resolvers: [
-					IconsResolver({prefix:"Icon_", extension:"tsx", alias:IconAliases}),
+					IconsResolver({prefix:"Icon_", extension:"tsx",   alias:IconAliases}),
 				],
 			}),
 
+			/** [Config 1] Preferred, currently doesn't work @ .astro */
+			//Icons({
+			//	compiler:     "solid",
+			//	defaultClass: "Icon",
+			//}),
+
+			/** [Config 2] modified for .astro compat */
 			Icons({
-				compiler:     "solid",
-				defaultClass: "Icon",
+				compiler: "solid",
+				iconCustomizer(collection, icon, props){
+					props["data-iconify"] = true
+				},
 			}),
 
 		],
